@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAD7CD"
+    android:gravity="center"
+    tools:context=".RegisterPage">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+
+        android:background="@drawable/group_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:fontFamily="@font/gothambold"
+        android:text="REGISTER"
+        android:textAlignment="center"
+        android:textColor="#344E41"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rfidcode"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:hint="BUID WILL SHOW HERE"
+        android:textAlignment="center"
+        android:textColor="#344E41"
+        android:textSize="20sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/box_stroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/form"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColorHint="#DAD7CD"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rfidcode" />
+
+    <EditText
+        android:id="@+id/nim"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/form"
+        android:drawableLeft="@drawable/school_nim"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="nim ex: 26656"
+        android:inputType="number"
+        android:maxLength="5"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColorHint="#DAD7CD"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/form"
+        android:drawableLeft="@drawable/code"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="BUID CODE"
+        android:inputType="text"
+        android:maxLength="11"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColorHint="#DAD7CD"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nim" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button_custom"
+        android:text="SUBMIT"
+        android:textColor="#DAD7CD"
+        android:textSize="15sp"
+        android:onClick="sendData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nim"/>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_custom"
+        android:text="Done"
+        android:textColor="#DAD7CD"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/submit"/>
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_wave2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

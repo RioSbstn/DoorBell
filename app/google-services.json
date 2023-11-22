@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "341290514425",
+    "firebase_url": "https://nodemcurfid-f04d5-default-rtdb.firebaseio.com",
+    "project_id": "nodemcurfid-f04d5",
+    "storage_bucket": "nodemcurfid-f04d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341290514425:android:c4550d37bd5a61c561ef28",
+        "android_client_info": {
+          "package_name": "com.example.absensinodemcufirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341290514425-4vus84v6lme698vqao0pahvqle5a4c22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlrNTeJ_KtCJF6dwNKGwSq8bo8khaODj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341290514425-4vus84v6lme698vqao0pahvqle5a4c22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
